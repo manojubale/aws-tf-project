@@ -1,0 +1,25 @@
+# Terraform local files
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform lock file (optional)
+.terraform.lock.hcl
+
+# Variable files containing secrets
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+
+# Sensitive keys
+*.pem
+*.key
+
+# OS/editor files
+.vscode/
+.idea/
+*.swp
