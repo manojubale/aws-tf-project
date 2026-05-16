@@ -1,0 +1,41 @@
+# AWS Terraform CI/CD Project
+
+Infrastructure as Code (IaC) project using Terraform to provision AWS resources with automated CI/CD pipeline using GitHub Actions.
+
+## Tech Stack
+- AWS
+- Terraform
+- GitHub Actions
+- Ubuntu EC2
+
+## Features
+- Automated Terraform validation
+- Terraform plan execution
+- Auto deployment using Terraform Apply
+- Secure AWS authentication using GitHub Secrets
+- CI/CD pipeline integration
+
+## Project Structure
+terraform-project/
+├── .github/workflows/terraform.yaml
+├── main.tf
+├── provider.tf
+├── variables.tf
+├── outputs.tf
+├── backend.tf
+├── .gitignore
+└── README.md
+
+## Workflow
+GitHub Actions pipeline automatically performs:
+1. Terraform Init
+2. Terraform Format Check
+3. Terraform Validate
+4. Terraform Plan
+5. Terraform Apply
+
+## Security
+AWS credentials are securely managed using GitHub Secrets.
+
+## Author
+Manoj Ubale
